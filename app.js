@@ -69,7 +69,7 @@ const startServer = async () => {
         });
         const io = require('./socket').init(server, {
             cors: {
-                origin: 'http://localhost:3000',  // Thay đổi URL frontend của bạn
+                origin: 'http://localhost:3000', //url client
                 methods: ['GET', 'POST'],
                 allowedHeaders: ['Content-Type', 'Authorization'],
             }
